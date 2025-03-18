@@ -1,27 +1,72 @@
 <%- include('partials/header') %>
-    <main class="dashboard-container">
-        <section class="graph-section large-graph">
-            <h2>Inventory Overview</h2>
-            <div class="graph-placeholder">Inventory Graph will be displayed here</div>
-        </section>
+<%- include('partials/navbar') %>
+<div class="dashboard-container" >
+    <!-- Main Content -->
+    <main class="main-content">
         
-        <section class="mini-graphs">
-            <div class="graph-section">
-                <h2>Sales</h2>
-                <div class="graph-placeholder">Sales Graph</div>
+        <!-- Dashboard Cards -->
+        <div class="dashboard-grid">
+            <div id="card-inventory" class="card">
+                <p class="card-title">Inventaire Total</p>
+                <h3>1,234</h3>
+                <p class="card-subtitle">+12% depuis le dernier mois</p>
+                <i class="fa-solid fa-box icon"></i>
             </div>
-            <div class="graph-section">
-                <h2>Expenses</h2>
-                <div class="graph-placeholder">Expenses Graph</div>
+
+            <div id="card-sales" class="card">
+                <p class="card-title">Ventes</p>
+                <h3>€45,678</h3>
+                <p class="card-subtitle">+8% depuis le dernier mois</p>
+                <i class="fa-solid fa-euro-sign icon"></i>
             </div>
-            <div class="graph-section">
-                <h2>Profit</h2>
-                <div class="graph-placeholder">Profit Graph</div>
+
+            <div id="card-expenses" class="card">
+                <p class="card-title">Dépenses</p>
+                <h3>€12,345</h3>
+                <p class="card-subtitle">-3% depuis le dernier mois</p>
+                <i class="fa-solid fa-receipt icon"></i>
             </div>
-            <div class="graph-section">
-                <h2>Net Profit</h2>
-                <div class="graph-placeholder">Net Profit Graph</div>
+
+            <div id="card-profit" class="card">
+                <p class="card-title">Bénéfice Net</p>
+                <h3>€33,333</h3>
+                <p class="card-subtitle">+15% depuis le dernier mois</p>
+                <i class="fa-solid fa-chart-pie icon"></i>
             </div>
-        </section>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-container">
+            <div id="chart-sales" class="chart-container">
+                <h3>Évolution des ventes</h3>
+                <img src="/imgs/image.png" alt="Graphique des ventes">
+            </div>
+        
+            <div id="chart-inventory" class="chart-container">
+                <h3>État de l'inventaire</h3>
+                <img src="/imgs/image.png" alt="Graphique des ventes">
+
+            </div>
+        </div>
+        
+
+        <!-- Recent Activities -->
+        <div class="activities-container">
+            <h3>Activités récentes</h3>
+            <div class="activity">
+                <i class="fa-solid fa-plus-circle"></i>
+                <p>Nouveau stock ajouté - Il y a 2 heures</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <p>Nouvelle vente enregistrée - Il y a 4 heures</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-exclamation-triangle"></i>
+                <p>Alerte stock bas - Il y a 5 heures</p>
+            </div>
+        </div>
     </main>
+</div>
+
 <%- include('partials/footer') %>

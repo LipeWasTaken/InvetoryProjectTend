@@ -8,7 +8,6 @@
         </ul>
     </div>
     <div class="footer-section">
-        <h3>Inventory Manager</h3>
         <ul>
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Inventory</a></li>
@@ -36,6 +35,10 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Inventory Manager. All rights reserved.</p>
     </div>
+        <!-- Load login.js ONLY on the login page -->
+        <% if (typeof page !== 'undefined' && page === 'login') { %>
+            <script src="/js/login.js"></script>
+        <% } %>
 </footer>
 </body>
 </html>
