@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+#login-page{
+    height: 100vh;
+    padding: 400px;
+    position: relative;
+    z-index: 2;
+}
+/* Login Box */
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: #1f2937;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Header */
+#login-header .icon {
+    font-size: 2rem;
+    color: #b0bec5;
+    margin-bottom: 10px;
+}
+
+#login-header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#login-header p {
+    color: #b0bec5;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px 40px;
+    background: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+/* Buttons */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #60a5fa;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #2563eb;
+}
+
+/* Links */
+.forgot-password, .create-account {
+    color: #b0bec5;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover, .create-account:hover {
+    color: #ffffff;
+}
+
+#mouse-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Makes sure it doesn't interfere with clicking */
+    z-index: 0; /* Ensures it's behind everything */
+}
+
+
+#mouse-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* So it doesn't interfere with clicks */
+    z-index: 999; /* Ensure it's on top */
+    background: radial-gradient(circle 150px at 50% 50%, rgba(100, 149, 237, 0.3), transparent);
+    transition: background 0.1s ease-out;
+}

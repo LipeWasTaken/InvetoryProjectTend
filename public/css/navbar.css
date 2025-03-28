@@ -1,0 +1,57 @@
+/* Make the navbar fixed at the top */
+.navbar {
+    position: fixed; /* Stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Adjust height as needed */
+    background-color: #1f2937; /* Dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Aligns menu items */
+    padding: 0 20px; /* Adds spacing */
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Style the navigation links */
+.navbar ul {
+    display: flex; /* Ensures links are in a row */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+/* Style the logout button */
+.logout-button {
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.logout-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #e63946; /* Red background */
+    border-radius: 5px;
+}
+
+.logout-button a:hover {
+    background-color: #c53030; /* Darker red on hover */
+}

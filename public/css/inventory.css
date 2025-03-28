@@ -1,0 +1,94 @@
+/* Keep search/filter aligned properly */
+.search-filter {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds some spacing */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+.search-filter input {
+    flex-grow: 1; /* Takes up remaining space */
+    padding: 5px; /* Adds some padding for aesthetics */
+}
+
+.search-filter select {
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Container */
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Filter button */
+#filter-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown menu */
+#filter-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Dropdown options */
+.filter-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.filter-option:hover {
+    background: #f0f0f0;
+}
+
+/* Show dropdown when active */
+.filter-container.active #filter-dropdown {
+    display: flex;
+}
+
+
+.inventory-main-container{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+/* Make inventory items align nicely */
+.inventory-display-headers {
+    background-color: #1f2937; /* Dark background */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.inventory-item-display {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+}

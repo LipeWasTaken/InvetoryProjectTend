@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<!-- Main Page Content -->
+<div class="main-content">
+    <!-- Search & Filters -->
+    <div class="search-filter">
+        <input placeholder="Rechercher un produit">
+        <div class="filter-container">
+            <button id="filter-button">
+                <i class="fas fa-filter"></i> Filtre
+            </button>
+            
+        
+            <!-- Hidden dropdown menu -->
+            <div id="filter-dropdown" class="hidden">
+                <div class="filter-option" data-value="purchaseasc">Purchase date Asc</div>
+                <div class="filter-option" data-value="purchasedesc">Purchase date Desc</div>
+                <div class="filter-option" data-value="price">Price</div>
+                <div class="filter-option" data-value="category">Category</div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="inventory-main-container">
+        <!-- Inventory Items -->
+        <div class="inventory-display-headers">
+            <div>Nom du produit </div>
+            <div>Categorie </div>
+            <div>Quantite </div>
+            <div>Prix </div>
+            <div>Action </div>
+        </div>
+
+        <div class="inventory-item-display">
+            <!-- Dynamically render items here -->
+            <% items.forEach(item => { %>
+                <div><%= item.name %></div>
+                <div><%= item.category || 'N/A' %></div>
+                <div><%= item.quantity %></div>
+                <div><%= item.price %></div> <!-- Format price to 2 decimal places -->
+                <div>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
+

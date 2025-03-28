@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.search-filter {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-filter input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-filter button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+/* Conteneur principal */
+.inventory-main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #1f2937;
+}
+
+/* En-têtes de colonnes */
+.inventory-display-headers {
+  background-color: #1f2937;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* <-- 5 colonnes fixes */
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.inventory-item-display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* <-- pareil ici */
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #1f2937;
+}
+
+/* Boutons */
+.action-btn {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}

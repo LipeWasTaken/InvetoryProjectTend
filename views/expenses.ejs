@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<div class="main-content">
+  <div class="search-filter">
+    <input type="text" id="searchInput" placeholder="Rechercher un abonnement...">
+    <button onclick="filterItems()">Filtre</button>
+  </div>
+
+  <!-- Conteneur principal -->
+  <div class="inventory-main-container">
+    
+    <!-- En-têtes -->
+    <div class="inventory-display-headers">
+      <div><strong>Produit / Abonnement</strong></div>
+      <div><strong>Catégorie</strong></div>
+      <div><strong>Quantité</strong></div>
+      <div><strong>Prix</strong></div>
+      <div><strong>Action</strong></div>
+    </div>
+
+    <!-- Données -->
+    <div class="inventory-item-display">
+      <div>Netflix Premium</div>
+      <div>Abonnement</div>
+      <div>1</div>
+      <div>17.99</div>
+      <div>
+        <button class="action-btn edit-btn">Modifier</button>
+        <button class="action-btn delete-btn">Supprimer</button>
+      </div>
+    </div>
+
+    <div class="inventory-item-display">
+      <div>Jordan 1</div>
+      <div>Chaussures</div>
+      <div>1</div>
+      <div>270</div>
+      <div>
+        <button class="action-btn edit-btn">Modifier</button>
+        <button class="action-btn delete-btn">Supprimer</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
+<%- include('partials/footer') %>
