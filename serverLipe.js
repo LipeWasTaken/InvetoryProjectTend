@@ -33,11 +33,6 @@ async function fetchItems() {
     return items; 
 }
 
-
-
-
-
-
 /*---------------- END POINTS ----------------*/
 app.get('/', (req, res) => {
     res.render('index.ejs', { page: 'login' });
